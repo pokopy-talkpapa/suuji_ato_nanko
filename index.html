@@ -271,7 +271,7 @@ function cancelSpeech() {
 function speakQuestion(n) {
   if (!speechSupported || !voiceEnabled) return;
   cancelSpeech();
-  const uttr = new SpeechSynthesisUtterance(`${n}。あと なんこ？`);
+  const uttr = new SpeechSynthesisUtterance(`${n}。あと いくつ？`);
   uttr.lang = "ja-JP";
   uttr.rate = 0.92;
   uttr.pitch = 1.0;
